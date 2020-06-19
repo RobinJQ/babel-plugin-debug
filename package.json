@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      "@rob.j.qva/babel-plugin-debug@1.0.3",
+      "/home/robin/Develop/test"
+    ]
+  ],
+  "_from": "@rob.j.qva/babel-plugin-debug@1.2.0",
+  "_id": "@rob.j.qva/babel-plugin-debug@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Vj2hJey2VK2ke7vI9KYaIV2Maq51ZrHuZnv/85n5BN6+G4cY8ljn31URvbnoiEHDFVn+vf+KDVT6g5R6Evw/KQ==",
+  "_location": "/@rob.j.qva/babel-plugin-debug",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@rob.j.qva/babel-plugin-debug@1.2.0",
+    "name": "@rob.j.qva/babel-plugin-debug",
+    "escapedName": "@rob.j.qva%2fbabel-plugin-debug",
+    "scope": "@rob.j.qva",
+    "rawSpec": "1.2.0",
+    "saveSpec": null,
+    "fetchSpec": "1.2.0"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/@rob.j.qva/babel-plugin-debug/-/babel-plugin-debug-1.2.0.tgz",
+  "_shasum": "edd43fe3783b1be0a8c35d6f0d4eecbf3c610fdd",
+  "_spec": "@rob.j.qva/babel-plugin-debug@1.2.0",
+  "_where": "/home/robin/Develop/frontend/victim/server",
+  "author": {
+    "name": "Robin Qvarfordt"
+  },
+  "bundleDependencies": false,
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "onchange": "^7.0.2",
+    "prettier": "2.0.5"
+  },
+  "deprecated": false,
+  "description": "Plugin that transforms __DEBUG(<MESSAGE>) to console.log(\"[DEBUG line:\", <LINE>, \"file:\", \"<FILE>]\", <MESSAGE>)",
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "babel plugin",
+    "babelplugin",
+    "plugin",
+    "debug"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobinJQ/babel-plugin-debug.git"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@rob.j.qva/babel-plugin-debug",
+  "scripts": {
+    "test": "jest --watch",
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}",
+    "prettier": "prettier --write \"**/*.js\""
+  },
+  "version": "1.2.0"
+}
