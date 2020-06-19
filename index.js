@@ -21,24 +21,13 @@ module.exports = ({ types }, options) => {
           } else {
             const location = path.node.loc;
             const filename_obj = state.file.opts.filename.match("[^/]*$");
-            const filename = filename_obj
-              ? state.file.opts.filename.substr(filename_obj.index)
-              : "";
+            const filename = filename_obj ? state.file.opts.filename.substr(filename_obj.index) : "";
             path.node.callee.name = "console.log";
             const line = location ? location.start.line : "";
             const output =
-              "[ DEBUG line: " +
-              line +
-              " file: " +
-              filename +
-              " function: " +
-              func_name(path) +
-              " ]";
+              "[ DEBUG line: " + line + " file: " + filename + " function: " + func_name(path) + " ]";
             path.unshiftContainer("arguments", types.stringLiteral(output));
-            path.unshiftContainer(
-              "arguments",
-              types.stringLiteral("\x1b[33m%s\x1b[0m")
-            );
+            path.unshiftContainer("arguments", types.stringLiteral("\x1b[33m%s\x1b[0m"));
           }
         }
       },
